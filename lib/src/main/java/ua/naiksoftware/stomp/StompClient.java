@@ -332,4 +332,12 @@ public class StompClient {
     public String getTopicId(String dest) {
         return topics.get(dest);
     }
+
+    /**
+     * returns current headers
+     * @return List of StompHeader or null
+     */
+    public @Nullable List<StompHeader> getHeaders() {
+        return headers;
+    }
 }
